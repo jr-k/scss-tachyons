@@ -1,0 +1,317 @@
+$breakpoints: (
+		('', '', ''),
+		('-xs', '0px', '767px'),
+		('-sm', '768px', '991px'),
+		('-md', '992px', '1199px'),
+		('-lg', '1200px', ''),
+);
+$display: (
+		(('inline', 'd-inl'), 'inline'),
+		(('block', 'd-bl'), 'block'),
+		(('inherit', 'd-inh'), 'inherit'),
+		(('inline-block', 'd-inlbl'), 'inline-block'),
+		(('inline-flex', 'd-inlfl'), 'inline-flex'),
+		(('flex', 'd-fl'), 'flex'),
+		(('d-none', 'hidden'), 'none'),
+);
+
+$justifyContent: (
+		(('flex-jc-center', 'fjc-center'), 'center'),
+		(('flex-jc-start', 'fjc-start'), 'flex-start'),
+		(('flex-jc-end', 'fjc-end'), 'flex-end'),
+);
+
+$alignItems: (
+		(('flex-jc-center', 'fjc-center'), 'center'),
+		(('flex-jc-start', 'fjc-start'), 'flex-start'),
+		(('flex-jc-end', 'fjc-end'), 'flex-end'),
+);
+
+$visibility: (
+		(('visible', 'v-vis'), 'visible'),
+		(('invisible', 'v-invis', 'v-hidd'), 'hidden'),
+);
+$cursor: (
+		(('clickable', 'cur-p'), 'pointer'),
+		(('no-clickable', 'cur-d'), 'default'),
+		(('no-allowed', 'cur-na'), 'not-allowed'),
+		(('cur-move'), 'move'),
+);
+$float: (
+		(('f-none'), 'none'),
+		(('f-left'), 'left'),
+		(('f-right'), 'right'),
+);
+$clear: (
+		(('clr-i'), 'initial'),
+		(('clr-u'), 'unset'),
+		(('clr-n'), 'none'),
+		(('clr-l'), 'left'),
+		(('clr-r'), 'right'),
+		(('clr-b', 'clr-lr'), 'both'),
+);
+$fontStyle: (
+		(('italic', 'fs-i'), 'italic'),
+		(('fs-normal', 'fs-n'), 'normal'),
+);
+$fontWeight: (
+		(('semi-bold', 'fw-sb', 'fw-600'), '600'),
+		(('bold', 'fw-b'), 'bold'),
+		(('fw-normal', 'fw-n'), 'normal'),
+);
+$textDecoration: (
+		(('deco-strike', 'strike'), 'line-through'),
+		(('deco-underline', 'underline'), 'underline'),
+		(('deco-none'), 'none'),
+);
+$textTransform: (
+		(('upper', 'tt-u'), 'uppercase'),
+		(('lower', 'tt-l'), 'lowercase'),
+);
+$overflow: (
+		(('of-visible'), 'visible'),
+		(('of-hidden'), 'hidden'),
+		(('of-auto'), 'auto'),
+);
+$overflowX: (
+		(('ofx-visible'), 'visible'),
+		(('ofx-hidden'), 'hidden'),
+		(('ofx-scroll'), 'scroll'),
+);
+$overflowY: (
+		(('ofy-visible'), 'visible'),
+		(('ofy-hidden'), 'hidden'),
+		(('ofy-scroll'), 'scroll'),
+);
+$textAlign: (
+		(('ta-left', 'tal'), 'left'),
+		(('ta-right', 'tar'), 'right'),
+		(('ta-center', 'tac'), 'center'),
+		(('ta-justify', 'taj'), 'justify'),
+);
+$positionCss: (
+		(('relative', 'p-relative'), 'relative'),
+		(('absolute', 'p-absolute'), 'absolute'),
+		(('static', 'p-static'), 'static'),
+		(('fixed', 'p-fixed'), 'fixed'),
+);
+$lineHeight: (
+		(('lh-n'), 'normal'),
+);
+
+// range:start:end:step:unit:vendorPrefix
+// word:list
+$tachyons: (
+		('top', 'top', 'range', (0, 9, 1, 1, 'px'), false),
+		('top', 'top', 'range', (10, 100, 5, 1, 'px'), false),
+		('ntop', 'top', 'range', (0, 9, 1, -1, 'px'), false),
+		('ntop', 'top', 'range', (10, 100, 5, -1, 'px'), false),
+		('right', 'right', 'range', (0, 9, 1, 1, 'px'), false),
+		('right', 'right', 'range', (10, 100, 5, 1, 'px'), false),
+		('nright', 'right', 'range', (0, 9, 1, -1, 'px'), false),
+		('nright', 'right', 'range', (10, 100, 5, -1, 'px'), false),
+		('bottom', 'bottom', 'range', (0, 9, 1, 1, 'px'), false),
+		('bottom', 'bottom', 'range', (10, 100, 5, 1, 'px'), false),
+		('nbottom', 'bottom', 'range', (0, 9, 1, -1, 'px'), false),
+		('nbottom', 'bottom', 'range', (10, 100, 5, -1, 'px'), false),
+		('left', 'left', 'range', (0, 9, 1, 1, 'px'), false),
+		('left', 'left', 'range', (10, 100, 5, 1, 'px'), false),
+		('nleft', 'left', 'range', (0, 9, 1, -1, 'px'), false),
+		('nleft', 'left', 'range', (10, 100, 5, -1, 'px'), false),
+		('w', 'width', 'range', (0, 9, 1, 1, 'px'), false),
+		('w', 'width', 'range', (10, 200, 5, 1, 'px'), false),
+		('h', 'height', 'range', (0, 9, 1, 1, 'px'), false),
+		('h', 'height', 'range', (10, 100, 5, 1, 'px'), false),
+		('m', 'margin', 'range', (0, 9, 1, 1, 'px'), false),
+		('m', 'margin', 'range', (10, 100, 5, 1, 'px'), false),
+		('p', 'padding', 'range', (0, 9, 1, 1, 'px'), false),
+		('p', 'padding', 'range', (10, 100, 5, 1, 'px'), false),
+		('mt', 'margin-top', 'range', (0, 9, 1, 1, 'px'), false),
+		('mt', 'margin-top', 'range', (10, 200, 5, 1, 'px'), false),
+		('mr', 'margin-right', 'range', (0, 9, 1, 1, 'px'), false),
+		('mr', 'margin-right', 'range', (10, 100, 5, 1, 'px'), false),
+		('mb', 'margin-bottom', 'range', (0, 9, 1, 1, 'px'), false),
+		('mb', 'margin-bottom', 'range', (10, 200, 5, 1, 'px'), false),
+		('ml', 'margin-left', 'range', (0, 9, 1, 1, 'px'), false),
+		('ml', 'margin-left', 'range', (10, 100, 5, 1, 'px'), false),
+		('mlr', ('margin-left', 'margin-right'), 'range', (0, 9, 1, 1, 'px'), false),
+		('mbt', ('margin-bottom', 'margin-top'), 'range', (0, 9, 1, 1, 'px'), false),
+		('mlr', ('margin-left', 'margin-right'), 'range', (10, 100, 5, 1, 'px'), false),
+		('mbt', ('margin-bottom', 'margin-top'), 'range', (10, 100, 5, 1, 'px'), false),
+		('m', 'margin', 'word', ((('auto'), 'auto'),), false),
+		('ml', 'margin-left', 'word', ((('auto'), 'auto'),), false),
+		('mr', 'margin-right', 'word', ((('auto'), 'auto'),), false),
+		('mlr', ('margin-left', 'margin-right'), 'word', ((('auto'), 'auto'),), false),
+		('nmt', 'margin-top', 'range', (0, 9, 1, -1, 'px'), false),
+		('nmt', 'margin-top', 'range', (10, 100, 5, -1, 'px'), false),
+		('nmr', 'margin-right', 'range', (0, 9, 1, -1, 'px'), false),
+		('nmr', 'margin-right', 'range', (10, 100, 5, -1, 'px'), false),
+		('nmb', 'margin-bottom', 'range', (0, 9, 1, -1, 'px'), false),
+		('nmb', 'margin-bottom', 'range', (10, 100, 5, -1, 'px'), false),
+		('nml', 'margin-left', 'range', (0, 9, 1, -1, 'px'), false),
+		('nml', 'margin-left', 'range', (10, 100, 5, -1, 'px'), false),
+		('nmlr', ('margin-left', 'margin-right'), 'range', (0, 9, 1, -1, 'px'), false),
+		('nmbt', ('margin-bottom', 'margin-top'), 'range', (0, 9, 1, -1, 'px'), false),
+		('nmlr', ('margin-left', 'margin-right'), 'range', (10, 100, 5, -1, 'px'), false),
+		('nmbt', ('margin-bottom', 'margin-top'), 'range', (10, 100, 5, -1, 'px'), false),
+		('pt', 'padding-top', 'range', (0, 9, 1, 1, 'px'), false),
+		('pt', 'padding-top', 'range', (10, 100, 5, 1, 'px'), false),
+		('pr', 'padding-right', 'range', (0, 9, 1, 1, 'px'), false),
+		('pr', 'padding-right', 'range', (10, 100, 5, 1, 'px'), false),
+		('pb', 'padding-bottom', 'range', (0, 9, 1, 1, 'px'), false),
+		('pb', 'padding-bottom', 'range', (10, 100, 5, 1, 'px'), false),
+		('pl', 'padding-left', 'range', (0, 9, 1, 1, 'px'), false),
+		('pl', 'padding-left', 'range', (10, 100, 5, 1, 'px'), false),
+		('plr', ('padding-left', 'padding-right'), 'range', (0, 9, 1, 1, 'px'), false),
+		('pbt', ('padding-bottom', 'padding-top'), 'range', (0, 9, 1, 1, 'px'), false),
+		('plr', ('padding-left', 'padding-right'), 'range', (10, 100, 5, 1, 'px'), false),
+		('pbt', ('padding-bottom', 'padding-top'), 'range', (10, 100, 5, 1, 'px'), false),
+		('opac', 'opacity', 'range', (0, 100, 5, 100, ''), false),
+		('f', 'font-size', 'range', (6, 60, 1, 1, 'px'), false),
+		('', 'display', 'word', $display, false),
+		('', 'justify-content', 'word', $justifyContent, false),
+		('', 'align-items', 'word', $alignItems, false),
+		('', 'visibility', 'word', $visibility, false),
+		('', 'cursor', 'word', $cursor, false),
+		('', 'float', 'word', $float, false),
+		('', 'clear', 'word', $clear, false),
+		('', 'line-height', 'word', $lineHeight, false),
+		('lh', 'line-height', 'range', (1, 100, 1, 1, 'px'), false),
+		('', 'font-style', 'word', $fontStyle, false),
+		('', 'font-weight', 'word', $fontWeight, false),
+		('', 'text-decoration', 'word', $textDecoration, false),
+		('', 'text-transform', 'word', $textTransform, false),
+		('', 'overflow', 'word', $overflow, false),
+		('', 'overflow-x', 'word', $overflowX, false),
+		('', 'overflow-y', 'word', $overflowY, false),
+		('', 'text-align', 'word', $textAlign, false),
+		('', 'position', 'word', $positionCss, false),
+		('', 'border-radius', 'word', ((('radius-circle'), '50%'),), true),
+		/*  ('', 'border-top-right-radius', 'word', ((('radius-circle'), '50%'),), true),
+		  ('', 'border-bottom-right-radius', 'word', ((('radius-circle'), '50%'),), true),
+		  ('', 'border-top-left-radius', 'word', ((('radius-circle'), '50%'),), true),
+		  ('', 'border-bottom-left-radius', 'word', ((('radius-circle'), '50%'),), true),*/ ('radius', 'border-radius', 'range', (0, 100, 1, 1, 'px'), true),
+		/*  ('radius-tr', 'border-top-right-radius', 'range', 0, 100, 1, 1,'px', true),
+		  ('radius-br', 'border-bottom-right-radius', 'range', 0, 100, 1, 1,'px', true),
+		  ('radius-tl', 'border-top-left-radius', 'range', 0, 100, 1, 1,'px', true),
+		  ('radius-bl', 'border-bottom-left-radius', 'range', 0, 100, 1, 1,'px', true),*/ ('zindex', 'z-index', 'range', (0, 100000, 10000, 1, ''), false),
+		('zindex', 'z-index', 'range', (1, 100001, 10000, 1, ''), false),
+		('', 'height', 'word', ((('h100p'), '100%'), (('h-auto'), 'auto')), false),
+		('', 'width', 'word', ((('w100p'), '100%'), (('w-auto'), 'auto')), false),
+		('', 'min-height', 'word', ((('minh-100'), '100%'), (('minh-auto'), 'auto')), false),
+		('', 'max-height', 'word', ((('maxh-100'), '100%'), (('maxh-auto'), 'auto')), false),
+		('', 'min-width', 'word', ((('minw-100'), '100%'), (('minw-auto'), 'auto')), false),
+		('', 'max-width', 'word', ((('maxw-100'), '100%'), (('maxw-auto'), 'auto')), false),
+);
+
+@mixin soupe($breakpointKey,$breakpointMinWidth,$breakpointMaxWidth) {
+	@if $breakpointMinWidth == '' {
+		// if no min width -> no media query
+		@content;
+	} @else if $breakpointMaxWidth == '' {
+		// if no max width -> only min width media query
+		@media (min-width: #{$breakpointMinWidth}) {
+			@content;
+		}
+	} @else {
+		@media (min-width: #{$breakpointMinWidth}) and (max-width: #{$breakpointMaxWidth}) {
+			@content;
+		}
+	}
+}
+
+@mixin vendor-prefix($name, $argument) {
+	-webkit-#{$name}: #{$argument} !important;
+	-ms-#{$name}: #{$argument} !important;
+	-moz-#{$name}: #{$argument} !important;
+	-o-#{$name}: #{$argument} !important;
+	#{$name}: #{$argument} !important;
+}
+
+@each $breakpoint in $breakpoints {
+	// min width for breakpoints
+	$breakpointKey: nth($breakpoint, 1);
+	$breakpointMinWidth: nth($breakpoint, 2);
+	$breakpointMaxWidth: nth($breakpoint, 3);
+
+	@include soupe($breakpointKey, $breakpointMinWidth, $breakpointMaxWidth) {
+
+		@each $tachyon in $tachyons {
+
+			// Class css name
+			$className: nth($tachyon, 1);
+			// Css attributes
+			$cssAttribute: nth($tachyon, 2);
+			$classType: nth($tachyon, 3);
+			$options: nth($tachyon, 4);
+			// Is their vendor prefix for browser
+			$vendorPrefixes: nth($tachyon, 5);
+
+			@if $classType == 'range' {
+				// parameters for the range
+				$min: nth($options, 1);
+				$max: nth($options, 2);
+				$step: nth($options, 3);
+				$divider: nth($options, 4);
+				$unit: nth($options, 5);
+
+				// going through the range step by step
+				@for $i from 0 through ceil(($max - $min) / $step) {
+					// i said step by step
+					$value: $min + $step * $i;
+
+					.#{$className+$value}#{$breakpointKey} {
+						@if type-of($cssAttribute) == "string" {
+							$attrName: $cssAttribute;
+							$attrValue: $value/$divider+$unit;
+							@if $vendorPrefixes == true {
+								@include vendor-prefix($attrName, $attrValue)
+							} @else {
+								#{$attrName}: #{$attrValue} !important;
+							}
+						} @else if type-of($cssAttribute) == "list" {
+							@each $attrName in $cssAttribute {
+								$attrValue: $value/$divider+$unit;
+								@if $vendorPrefixes == true {
+									@include vendor-prefix($attrName, $attrValue)
+								} @else {
+									#{$attrName}: #{$attrValue} !important;
+								}
+							}
+						}
+					}
+				}
+			} @else if $classType == 'word' {
+				@each $option in $options {
+					$optionsKeys: nth($option, 1);
+					$optionValue: nth($option, 2);
+
+					$classNames: '';
+					@each $optionKey in $optionsKeys {
+						$classNames: $classNames + '.' + $className + $optionKey + $breakpointKey + ' ,';
+					}
+
+					@if type-of($cssAttribute) == "string" {
+						#{$classNames} {
+							@if $vendorPrefixes == true {
+								@include vendor-prefix($cssAttribute, $optionValue)
+							} @else {
+								#{$cssAttribute}: #{$optionValue} !important;
+							}
+						}
+					} @else if type-of($cssAttribute) == "list" {
+						@each $attrName in $cssAttribute {
+							#{$classNames} {
+								@if $vendorPrefixes == true {
+									@include vendor-prefix($attrName, $optionValue)
+								} @else {
+									#{$attrName}: #{$optionValue} !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
